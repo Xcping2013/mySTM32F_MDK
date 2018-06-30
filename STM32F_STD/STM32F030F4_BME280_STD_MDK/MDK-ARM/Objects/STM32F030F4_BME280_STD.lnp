@@ -1,0 +1,20 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\stm32f0xx_it.o"
+".\objects\system_stm32f0xx.o"
+".\objects\startup_stm32f030.o"
+".\objects\iic_soft.o"
+".\objects\bme280.o"
+".\objects\stm32f0xx_flash.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_misc.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_spi.o"
+".\objects\stm32f0xx_syscfg.o"
+".\objects\stm32f0xx_usart.o"
+".\objects\bme280_selftest.o"
+--library_type=microlib --strict --scatter ".\Objects\STM32F030F4_BME280_STD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32F030F4_BME280_STD.map" -o .\Objects\STM32F030F4_BME280_STD.axf

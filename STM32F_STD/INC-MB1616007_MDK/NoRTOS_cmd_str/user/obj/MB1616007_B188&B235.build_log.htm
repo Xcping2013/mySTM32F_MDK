@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1111 1111, 1111, LIC=LJWBS-LHPYS-66JQS-LCJE3-0UQXX-6F4US
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  D:\Keil\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      UL2CM3.DLL V1.159.7.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+E:\MyCode\stm32f10x_std3.5_mdk\NoRTOS_cmd_str\user\myStr.uvprojx
+Project File Date:  10/18/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Keil\MDK\ARM\ARMCC\Bin'
+Build target 'myStr'
+compiling main.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_it.c...
+compiling commands.c...
+..\cmd\commands.c(39): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  		MakeLowercase(USART_RX_BUF);
+..\cmd\commands.c(102): warning:  #177-D: function "CMD_sw"  was declared but never referenced
+  static uint8_t  CMD_sw(char *Commands)
+..\cmd\commands.c(112): warning:  #177-D: function "CMD_hw"  was declared but never referenced
+  static uint8_t  CMD_hw(char *Commands)
+..\cmd\commands.c: 3 warnings, 0 errors
+compiling user_cmd_fun.c...
+..\cmd\user_cmd_fun.c(22): warning:  #223-D: function "strtol" declared implicitly
+  		u8 channel=strtol(s, &p, 10);	
+..\cmd\user_cmd_fun.c(40): warning:  #940-D: missing return statement at end of non-void function "CMD_int" 
+  }
+..\cmd\user_cmd_fun.c(48): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  			Out.writeAll(&Commands[8]);
+..\cmd\user_cmd_fun.c(58): warning:  #223-D: function "strtol" declared implicitly
+  		u8 channel=strtol(s, &p, 10);	
+..\cmd\user_cmd_fun.c(83): warning:  #940-D: missing return statement at end of non-void function "CMD_out" 
+  }
+..\cmd\user_cmd_fun.c(119): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		at24cxx.write(at24c256, 0, &Commands[3], strlen(&Commands[3])+1);
+..\cmd\user_cmd_fun.c(134): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			at24cxx.write(at24c256, 0, &Commands[4], strlen(&Commands[4])+1);
+..\cmd\user_cmd_fun.c(141): warning:  #940-D: missing return statement at end of non-void function "CMD_fsn" 
+  }
+..\cmd\user_cmd_fun.c(151): warning:  #223-D: function "strtol" declared implicitly
+  		DataNum=strtol(s, &p, 10);	
+..\cmd\user_cmd_fun.c(155): warning:  #223-D: function "strtod" declared implicitly
+  			DataSet=strtod(p+2, &s);			
+..\cmd\user_cmd_fun.c(159): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  				at24cxx.write(at24c256,DataNum*64,p+2,strlen(p+2)+1);
+..\cmd\user_cmd_fun.c(149): warning:  #550-D: variable "DataSet"  was set but never used
+  		u8 DataSet;		
+..\cmd\user_cmd_fun.c(173): warning:  #223-D: function "strtol" declared implicitly
+  		DataNum=strtol(s, &p, 10);	
+..\cmd\user_cmd_fun.c(188): warning:  #940-D: missing return statement at end of non-void function "CMD_rom" 
+  }
+..\cmd\user_cmd_fun.c(197): warning:  #223-D: function "strtol" declared implicitly
+  		PageNum=strtol(s, &p, 10);	
+..\cmd\user_cmd_fun.c(201): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  			at24cxx.write(at24c256,(PageNum+100)*64,p+1,strlen(p+1)+1);
+..\cmd\user_cmd_fun.c(215): warning:  #223-D: function "strtol" declared implicitly
+  		PageNum=strtol(s, &p, 10);	
+..\cmd\user_cmd_fun.c(231): warning:  #940-D: missing return statement at end of non-void function "CMD_RomPage" 
+  }
+..\cmd\user_cmd_fun.c: 18 warnings, 0 errors
+compiling 74HC165.c...
+compiling 74HC595.c...
+compiling at24cxx.c...
+compiling dido.c...
+compiling mcu_exit.c...
+compiling mcu_softi2c.c...
+compiling mcu_gpio.c...
+compiling mcu_wdg.c...
+compiling delay.c...
+compiling usart.c...
+compiling misc.c...
+compiling sys.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_rcc.c...
+linking...
+Program Size: Code=23092 RO-data=1020 RW-data=1224 ZI-data=1832  
+FromELF: creating hex file...
+".\obj\MB1616007_B188&B235.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_myStr
+  D:\Keil\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:38
+</pre>
+</body>
+</html>

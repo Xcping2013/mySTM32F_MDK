@@ -1,0 +1,11 @@
+.\objects\board.o: RTE\RTOS\board.c
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rthw.h
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rtthread.h
+.\objects\board.o: .\RTE\RTOS\rtconfig.h
+.\objects\board.o: .\RTE\_Button_Test\RTE_Components.h
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rtdebug.h
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rtdef.h
+.\objects\board.o: D:\Keil\MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rtservice.h
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rtm.h
+.\objects\board.o: D:\Keil\MDK\ARM\PACK\rt-thread\rtthread\2.1.1\include\rtthread.h

@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1111 111, 11, LIC=KIVEV-P4LTL-33XM1-CP6X1-97MGL-N3RCF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  D:\hardware\ARM_V5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMCM1.DLL V1.18.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TARMCM1.DLL V1.13.0.0
+ 
+<h2>Project:</h2>
+E:\MyBoards\INC\INC-THPress001\STM32F030F4_BME280_STD_MDK\MDK-ARM\STM32F030F4_BME280_STD.uvprojx
+Project File Date:  12/16/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\hardware\ARM_V5\ARM\ARMCC\Bin'
+Build target 'MrSlate'
+compiling main.c...
+..\User\main.c(205): warning:  #223-D: function "printf" declared implicitly
+  		printf("Tdata=%f\r\n",Tdata.fdata);	
+..\User\main.c(330): warning:  #223-D: function "printf" declared implicitly
+  	printf("%0.2f,%0.2f,%0.2f\r\n",comp_data->temperature-Tdata.fdata, comp_data->humidity, comp_data->pressure/1000);
+..\User\main.c(355): warning:  #223-D: function "printf" declared implicitly
+  	printf("Temperature, Humidity, Pressure\r\n");
+..\User\main.c(373): warning:  #111-D: statement is unreachable
+  	return rslt;
+..\User\main.c(407): warning:  #223-D: function "printf" declared implicitly
+  				printf("Get_T=%f\r\n",comp_data.temperature);
+..\User\main.c(461): warning:  #223-D: function "printf" declared implicitly
+      printf("Temperature, Pressure, Humidity\r\n");
+..\User\main.c(470): warning:  #111-D: statement is unreachable
+      return rslt;
+..\User\main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=14128 RO-data=276 RW-data=32 ZI-data=1176  
+FromELF: creating hex file...
+".\Objects\STM32F030F4_BME280_STD.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.1.5.0.pack
+                Keil.STM32F0xx_DFP.1.5.0
+                STMicroelectronics STM32F0 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_MrSlate
+  D:\hardware\ARM_V5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

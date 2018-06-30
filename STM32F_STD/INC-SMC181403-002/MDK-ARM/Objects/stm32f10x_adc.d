@@ -1,0 +1,16 @@
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\src\stm32f10x_adc.c
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
+.\objects\stm32f10x_adc.o: ..\User\stm32f10x.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\core_cm3.h
+.\objects\stm32f10x_adc.o: D:\Keil\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f10x_adc.o: ..\User\system_stm32f10x.h
+.\objects\stm32f10x_adc.o: ..\User\stm32f10x_conf.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h
+.\objects\stm32f10x_adc.o: ..\User\stm32f10x.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_spi.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_tim.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
+.\objects\stm32f10x_adc.o: ..\STM32F10x_FWLib\inc\misc.h
